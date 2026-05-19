@@ -216,7 +216,7 @@ function TermsScreen() {
 }
 
 function MobileHome() {
-  const { currentChildId, students, menuItems, orders, addOrder, setUnfinishedOrder } = useAppStore();
+  const { currentChildId, students, menuItems, orders, addOrder, cancelOrder, setUnfinishedOrder } = useAppStore();
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
